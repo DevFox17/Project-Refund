@@ -49,6 +49,7 @@ form.onsubmit = (event) => {
   expenseAdd(newExpense)
 }
 
+// Adiciona um novo 
 function expenseAdd(newExpense) {
   try {
     // Cria um elemento de li para adicionar o item (li) na lista (ul)
@@ -75,8 +76,19 @@ function expenseAdd(newExpense) {
     // Adiciona name e category na div das informações da dispesa
     expenseInfo.append(expenseName, expenseCategory)
 
+    // Cria o valor da dispesa
+    const expenseAmount = document.createElement("span")
+    expenseAmount.classList.add("expense-amount")
+    expenseAmount.innerHTML = `<small>R$</small>${newExpense.amount.toUpperCase().replace("R$", "")}`
+
+    // Cria o ícone de remover
+    const removeIcon = document.createElement("img")
+    removeIcon.classList.add("remove-icon")
+    removeIcon.setAttribute("src", "img/remove.svg")
+    removeIcon.setAttribute("alt", "remover")
+
     // Adiciona as informações no item
-    expenseItem.append(expenseIcon, expenseInfo)
+    expenseItem.append(expenseIcon, expenseInfo, expenseAmount, removeIcon)
 
     // Aduciona o item na lista
     expenseList.append(expenseItem)
@@ -85,4 +97,6 @@ function expenseAdd(newExpense) {
     console.log(error)
   }
 }
+
+
 
