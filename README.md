@@ -7,7 +7,8 @@ Ideal para estudos, portfólio e demonstração de habilidades em desenvolviment
 
 ## 🎥 Demonstração
 
-![Untitled ‑ Made with FlexClip (2)](https://github.com/user-attachments/assets/4d9a23f3-f2c6-4844-864a-965b6c08f434)
+
+https://github.com/user-attachments/assets/95e18a23-cfd9-45b7-af08-974f0cdbef3f
 
 ---
 
